@@ -6,6 +6,10 @@ public class Main {
 		
 		Empleado empleado = new Empleado();
 		
-		System.out.println("Edad: " + empleado.getEdad() + " Nombre: " + empleado.getNombre());
+		System.out.println("Id: " + empleado.getId() + " Edad: " + empleado.getEdad() + " Nombre: " + empleado.getNombre());
+		
+		Empleado empleado1 = new Empleado();
+		
+		System.out.println("Id: " + empleado1.getId() + " Edad: " + empleado1.getEdad() + " Nombre: " + empleado1.getNombre());
 	}
 }

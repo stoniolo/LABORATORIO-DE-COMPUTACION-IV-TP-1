@@ -4,21 +4,26 @@ public class Empleado {
 
 	//Attributes
 	
-	private int id;
+	private final int id;
 	private String nombre;
 	private int edad;
 	
+	static int count=999;
 	
 	//Constructors
 	
 	public Empleado() 
 	{
+		count++;
+		id = count;
 		nombre = "Sin nombre";
 		edad = 99;
 	}
 	
 	public Empleado(String nombre, int edad)
 	{
+		count++;
+		id = count;
 		this.nombre = nombre;
 		this.edad = edad;
 	}
@@ -27,9 +32,6 @@ public class Empleado {
 	
 	public int getId() {
 		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getNombre() {
 		return nombre;
