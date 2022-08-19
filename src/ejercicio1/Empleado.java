@@ -10,6 +10,17 @@ public class Empleado {
 	
 	static int count=999;
 	
+	//métodos
+	public static int devuelveProximoID()
+	{
+		return count+1;
+	}
+	
+	@Override
+	public String toString() {
+		return "Empleado ID=" + id + ", Nombre=" + nombre + ", Edad=" + edad;
+	}
+	
 	//Constructors
 	
 	public Empleado() 
